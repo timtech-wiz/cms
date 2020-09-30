@@ -40,7 +40,7 @@
    <a class="btn btn-primary" href="add_p.php">Add New</a>  
   </div>
  
-                        
+                        <?php Messages::displayMsg(); ?>
                         <thead>
                          
 <!--

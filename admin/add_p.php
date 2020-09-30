@@ -1,6 +1,7 @@
 <?php
 
 require_once("config/init.php");
+include_once("../lib/Messages.php");
 
 $post = new Posts();
 
@@ -16,10 +17,11 @@ if(isset($pos['submit'])){
     $data['post_content'] = $pos['content'];
     
     if(!$post->addPost($data)){
-        header("Location: posts.php?Post Added");
+        header("Location: posts.php");
+        Messages::setMsg('Post Added', 'success');
         
     }else{
-        echo "Something went wrong";
+       Messages::setMsg('Please fill in a valid details', 'error');
         
     }
      

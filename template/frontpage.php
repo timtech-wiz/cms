@@ -71,6 +71,7 @@
                 <div class="well">
                     <h4>Login</h4>
                   <form action="" method="post">
+                     <?php Messages::displayMsg(); ?>
                       <div class="form-group">
                           <input type="email" class="form-control" name="email" placeholder="Enter Your Email" required>
                       </div>

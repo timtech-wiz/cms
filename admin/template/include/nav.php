@@ -18,7 +18,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><?php echo $_SESSION["username"]; ?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="profile.php"><i class="fa fa-fw fa-user"></i> Profile</a>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
                         </li>
                         
                         <li class="divider"></li>
@@ -48,7 +48,7 @@
                         <li>
                         <a href="posts.php"><i class="fa fa-fw fa-dashboard"></i>Posts</a>
                     </li>
-                    </li>
+                     
                     
                     
                     <li>
@@ -56,21 +56,21 @@
                     </li>
                     
                      <li>
-                        <a href="./comments.php"><i class="fa fa-fw fa-dashboard"></i> Comments</a>
+                        <a href="#"><i class="fa fa-fw fa-dashboard"></i> Comments</a>
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i>Users<i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="users.php">View All Users</a>
+                                <a href="#">View All Users</a>
                             </li>
                             <li>
-                                <a href="users.php?source=add_user">Add user</a>
+                                <a href="#">Add user</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="profile.php"><i class="fa fa-fw fa-wrench"></i>Profile</a>
+                        <a href="#"><i class="fa fa-fw fa-wrench"></i>Profile</a>
                     </li>
                    
                 </ul>

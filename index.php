@@ -1,6 +1,7 @@
 <?php
 
 include_once("config/init.php");
+include_once("lib/Messages.php");
 
 $post = new Posts();
 
@@ -15,7 +16,7 @@ if(isset($pos['submit'])){
     if($post->login($data)){
         header("Location: admin");
     }else{
-        echo "something went wrong";
+        Messages::setMsg('Incorrect Login details', 'error');
     }
  
 

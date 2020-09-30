@@ -31,6 +31,7 @@
                             
                             
                         <form action="" method="post">
+                        <?php Messages::displayMsg(); ?>
                         <div class="form-group">
                         <label for="cat-title">Add Category</label>
                         <input class="form-control" type="text" name= "cat_title" required>

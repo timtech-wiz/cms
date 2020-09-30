@@ -1,13 +1,15 @@
 <?php
 
 require_once("config/init.php");
+include_once("../lib/Messages.php");
 
 $post = new Posts();
 
 $post_id = isset($_GET['delete_post']) ? $_GET['delete_post'] : null;
 
 if($post->deletePost($post_id)){
-    header("posts.php?Post Deleted");
+    header("posts.php");
+    Messages::setMsg('Posts Deleted', 'error');
 }
 
 

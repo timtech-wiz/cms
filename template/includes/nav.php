@@ -22,9 +22,11 @@
 
                  <?php endforeach; ?>
             
+                   <?php if(isset($_SESSION['logged_in'])) : ?>
                     <li>
                         <a href="admin">Admin</a>
                     </li>
+                    <?php endif; ?>
                     <li class="">
                         <a href="registration.php">Register</a>
                     </li>

@@ -4,6 +4,7 @@
  <div class="well">
      <h2>Register</h2>
      <form action="" method="post">
+        <?php Messages::displayMsg(); ?>
          <div class="form-group">
             <label for="username">Username:</label>
              <input type="text" class="form-control" name="username" placeholder="Enter Username" required>

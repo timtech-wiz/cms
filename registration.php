@@ -1,6 +1,7 @@
 <?php
 
 include_once("config/init.php");
+include_once("lib/Messages.php");
 
 $post = new Posts();
 
@@ -15,9 +16,9 @@ if(isset($pos['submit'])){
  
     
      if(!$post->register($data)){
-         echo "successfully registered user";
+         Messages::setMsg('Registration Succesfully', 'success');
      }else{
-         echo "something went wrong";
+         Messages::setMsg('Please Fill in a valid Details', 'error');
      }
     
 }
